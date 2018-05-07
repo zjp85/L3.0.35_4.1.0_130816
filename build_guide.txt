@@ -1,0 +1,10 @@
+﻿#1. Set Env
+source environment-setup
+
+#2. Build U-Boot
+make mx6q_sabresd_config
+make
+
+#3. Build Kernel
+make imx6_defconfig
+make uImage
